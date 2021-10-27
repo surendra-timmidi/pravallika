@@ -1,0 +1,5 @@
+FROM jdk-1_8_201:base
+ADD target/demo-services.jar /demo-services.jar
+ENTRYPOINT ["/user/bin/java"]
+CMD ["-jar", "/demo-services.jar]
+EXPOSE 8090
